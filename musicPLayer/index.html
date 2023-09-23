@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-body">
+
+
+        <div class="nav-bar">
+            <div class="top-button">
+                <li><img class="nav-logo" src="/images/logo-icon.svg"></li>
+            </div>
+            <div class="center-buttons">
+                <li><a href="#"><img class="nav-logo" src="/images/nav-play-icon.svg"></a></li>
+                <li><a href="playlist.html"><img class="nav-logo" src="/images/playlist.svg"></a></li>
+            </div>
+            <div class="bottom-button">
+                <li><a href="logout.html"><img class="nav-logo" src="/images/logout-icon.svg"></a></li>
+            </div>
+        </div>
+
+
+
+        <div class="center-body ">
+            <div id="top-center-body" class="top-center-body glass-effect">
+
+                <div id="disk-body" class="disk-body">
+                    <div class="disk "><img id="disk" class="disk" src="/images/disk img.svg"></div>
+                </div>
+
+                <div class="control-body">
+                    <div class="song-name">song namre</div>
+                    <div class="artist-name">artist</div>
+                    <div class="progress-body">
+                        <audio src="/media/song1_Daku.mp3" id="audio"></audio>
+                        <input type="range" value="0" id="progress" class="range">
+                        <div class="duration-body">
+                            <div class="current-duration">00:00</div>
+                            <div class="max-duration">03:00</div>
+                        </div>
+                    </div>
+                    <div class="control-icons">
+                        <div class="prev"><img src="/images/prev-icon.svg" class="prev-icon"></div>
+                        <div class="play-pause"><img id="play-pause" class="play-icon" src="/images/pause.svg"></div>
+                        <div class="next"><img src="/images/next-icon.svg" class="next-icon"></div>
+                    </div>
+                    <div class="shuffle-repeat-body">
+                        <div id="repeat"class="repeat"><img src="/images/repeat-icon.svg"></div>
+                        <div id="wave-box" class="box-container">
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                            <div class="box"></div>
+                        </div>
+                        <div  id="shuffle"class="shuffle"><img src="/images/shuffle-icon.svg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-center-body glass-effect">
+               
+                <div class="song-card" id="songCard">
+                    <div><img id="song-image" onclick="changeSong()" class="song-card-image" src="/images/daku-song.webp"></div>
+                    <p class="playlist-artist-name">artist-name</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
